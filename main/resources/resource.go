@@ -6,7 +6,7 @@ import (
 )
 
 var (
-	go:embed app
+	//go:embed app
 	App embed.FS
 	go:embed admin
 	admin embed.FS
