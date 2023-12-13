@@ -23,7 +23,7 @@ jobs:
         
 
     - name: Build
-      run: go build .main/cmd/web/main.go
+      run: cd ./main && go build -ldflags="-s -w" -trimpath ./cmd/web/main.go
 
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3.1.3
