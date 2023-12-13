@@ -8,10 +8,10 @@ import (
 var (
 	//go:embed app
 	App embed.FS
-	go:embed admin
+	//go:embed admin
 	admin embed.FS
 
-	go:embed themes
+	//go:embed themes
 	Themes        embed.FS
 	ThemesDirName = "themes"
 )
